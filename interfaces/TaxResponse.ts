@@ -41,7 +41,7 @@
 //     }
 import { NalogItem } from "./NalogItem";
 
-export interface NalogResponse {
+export interface TaxResponse {
   json: {
     user: string;
     items: NalogItem[];
@@ -55,6 +55,6 @@ export interface NalogResponse {
       subtype: string;
       receiveDate: string;
     };
-      totalSum:number
+    totalSum: number;
   };
 }
