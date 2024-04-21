@@ -11,6 +11,7 @@ export interface IHistoryItem {
   partner: {
     name: string;
   };
+  time: number;
 }
 export interface IHistoryItemFull extends IHistoryItem {
   partnerName: string;
