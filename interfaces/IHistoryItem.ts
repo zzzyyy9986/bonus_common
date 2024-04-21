@@ -6,6 +6,12 @@ export interface IHistoryItem {
   bonuses: number;
   operationType: HistoryOperationTypes;
   qrStr: string;
-  partherId: string;
+  partnerId: string;
   userId: string;
+  partner: {
+    name: string;
+  };
+}
+export interface IHistoryItemFull extends IHistoryItem {
+  partnerName: string;
 }
